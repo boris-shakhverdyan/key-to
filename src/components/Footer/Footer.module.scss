@@ -1,0 +1,399 @@
+@import "../../vars";
+
+#footer {
+    #wrapper {
+        display: flex;
+
+        #socials {
+            margin-right: 192px;
+
+            p {
+                width: 288px;
+                color: #625b71;
+                font-family: Montserrat;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.25px;
+                margin-top: 12px;
+                margin-bottom: 16px;
+            }
+        }
+
+        #menu {
+            margin-top: 0;
+            margin-right: 106px;
+
+            a {
+                font-family: Montserrat;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 32px;
+                letter-spacing: 0.15px;
+                color: #625b71;
+                margin-bottom: 8p;
+                text-decoration: none;
+                display: block;
+                transition: all 0.2s;
+
+                &:hover {
+                    color: darken(#625b71, 20);
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &:first-child {
+                    margin-top: 8px;
+                }
+            }
+        }
+
+        #subscribeWrapper {
+            width: 360px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            #subscribe {
+                label {
+                    text-align: left;
+                    text-transform: uppercase;
+                    font-family: Montserrat;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.15px;
+                    margin-bottom: 6px;
+                    margin-left: 4px;
+                    color: #625b71;
+                    display: block;
+                }
+
+                input {
+                    padding-left: 15px;
+                    padding-top: 6px;
+                    border: 1px solid #79747e;
+                    margin-bottom: 16px;
+                    width: 360px;
+                    height: 56px;
+                    background-color: transparent;
+                    border-radius: 4px;
+                    margin-left: 5px;
+                    color: #49454f;
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.5px;
+
+                    &::placeholder {
+                        color: #49454f;
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.5px;
+                    }
+                }
+
+                button {
+                    width: 360px;
+                    height: 60px;
+                    background-color: #625b71;
+                    color: #ffffff;
+                    box-shadow: 0px 1px 3px 1px #00000026, 0px 1px 2px 0px #0000004d;
+                    border-radius: 4px;
+                    padding: 20px;
+                    font-family: Montserrat;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.1px;
+                    border: none;
+                    margin-left: 5px;
+                    transition: all 0.3s;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #625b71cc;
+                    }
+                }
+            }
+        }
+    }
+
+    #copyright {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #625b71;
+        margin-top: 64px;
+        margin-bottom: 24px;
+    }
+
+    &.dark {
+        #wrapper {
+            #socials {
+                p {
+                    color: #ffffff;
+                }
+            }
+
+            #menu {
+                a {
+                    color: #ffffff;
+
+                    &:hover {
+                        color: #a3a1a1;
+                    }
+                }
+            }
+
+            #subscribeWrapper {
+                #subscribe {
+                    label {
+                        color: #ffffff;
+                    }
+
+                    input {
+                        color: #fef7ff;
+
+                        &::placeholder {
+                            color: #fef7ff;
+                        }
+                    }
+
+                    button {
+                        background-color: #f7f2fa;
+                        color: #6750a4;
+
+                        &:hover {
+                            background-color: #6750a4;
+                            color: #f7f2fa;
+                        }
+                    }
+                }
+            }
+        }
+
+        #copyright {
+            color: #ffffff;
+        }
+    }
+}
+
+@media (max-width: $tablet-max-size) {
+    #footer {
+        width: 360px;
+        margin: auto;
+
+        #wrapper {
+            flex-direction: column;
+
+            .socialsList {
+                width: 193.26px;
+                margin: auto;
+            }
+
+            #socials {
+                width: 100%;
+
+                img {
+                    display: block;
+                    margin: auto;
+                    width: 50px;
+                    height: 60px;
+                    margin-bottom: 24px;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 16px;
+                    text-align: Center;
+                    color: #6750a4;
+                    width: 287px;
+                    margin: auto;
+                    letter-spacing: 0;
+                    margin-right: 35px;
+                    margin-bottom: 32px;
+                }
+            }
+
+            #menu {
+                margin-right: 2px;
+                margin-top: 1px;
+                display: flex;
+                gap: 16px;
+                flex-direction: column;
+                margin-bottom: 64px;
+
+                a {
+                    display: block;
+                    margin: auto;
+                    width: 100%;
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.15px;
+                    color: #6750a4;
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+
+                    &:nth-child(4) {
+                        margin-left: -4px;
+                    }
+
+                    &:nth-child(5) {
+                        margin-left: 2px;
+                    }
+                }
+            }
+
+            #subscribeWrapper {
+                margin-left: -2px;
+                margin-top: 1px;
+
+                #subscribe {
+                    label {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.15px;
+                        color: #6750a4;
+                    }
+
+                    input {
+                        padding-top: 3px;
+
+                        &::placeholder {
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                            letter-spacing: 0.25px;
+                            color: #625b71;
+                        }
+                    }
+
+                    button {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: #ffffff;
+                        background-color: #6750a4;
+                        margin-bottom: 64px;
+                    }
+                }
+            }
+        }
+
+        #copyright {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #21005d;
+            margin-top: 32px;
+            margin-left: 3px;
+            letter-spacing: 0;
+        }
+
+        &.dark {
+            #wrapper {
+                #socials {
+                    p {
+                        color: #ffffff;
+                    }
+                }
+
+                #menu {
+                    a {
+                        color: #ffffff;
+                    }
+                }
+
+                #subscribeWrapper {
+                    #subscribe {
+                        label {
+                            color: #ffffff;
+                        }
+
+                        input {
+                            &::placeholder {
+                                color: #fef7ff;
+                            }
+                        }
+
+                        button {
+                            color: #6750a4;
+                            background-color: #f7f2fa;
+                        }
+                    }
+                }
+            }
+
+            #copyright {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+@media (max-width: $unsafe-mobile-max-size) {
+    #footer {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        #wrapper {
+            width: 100%;
+            margin: auto;
+
+            #socials {
+                margin-right: 0;
+
+                p {
+                    margin-right: auto;
+                    margin-left: auto;
+                    width: 100%;
+                }
+            }
+
+            #menu {
+                margin: auto;
+                margin-bottom: 64px;
+            }
+
+            #subscribeWrapper {
+                width: 100%;
+                margin: auto;
+
+                #subscribe {
+                    label {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+
+                    input {
+                        width: 100%;
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+
+                    button {
+                        width: 100%;
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

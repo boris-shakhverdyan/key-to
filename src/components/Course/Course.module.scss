@@ -1,0 +1,256 @@
+@import "../../vars";
+
+.course {
+    width: 360px;
+    height: 401px;
+    padding: 32.18px;
+    border: 0.5px solid #4a4458;
+    border-radius: 16px;
+    position: relative;
+    transition: background-color 0.3s;
+    cursor: pointer;
+
+    svg {
+        display: block;
+        margin-bottom: 24.5px;
+        position: absolute;
+        top: 32.18px;
+        left: 32.18px;
+    }
+
+    h3 {
+        width: 155px;
+        margin-top: 116.82px;
+        color: #21005d;
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 16px;
+        transition: color 0.3s;
+    }
+
+    p {
+        color: #1d192b;
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        padding-bottom: 16px;
+        transition: color 0.3s;
+    }
+
+    a {
+        display: block;
+        text-align: center;
+        width: 198px;
+        background-color: #eaddff;
+        box-shadow: 0px 1px 3px 1px #00000026, 0px 1px 2px 0px #0000004d;
+        border-radius: 4px;
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: #6750a4;
+        text-decoration: none;
+        padding: 12px;
+    }
+
+    &.small {
+        padding-right: 26.88px;
+
+        svg {
+            top: 25px;
+        }
+
+        a {
+            width: 204px;
+        }
+    }
+
+    &.dark {
+        h3 {
+            color: #eaddff;
+        }
+
+        p {
+            color: #ffffff;
+        }
+    }
+
+    &:hover {
+        background-color: #625b71;
+
+        h3 {
+            color: #eaddff;
+        }
+
+        p {
+            color: #ffffff;
+        }
+    }
+}
+
+@media (max-width: $tablet-max-size) {
+    .course {
+        width: 536px !important;
+        background-color: #625b71;
+        height: 247px;
+        margin: auto;
+
+        svg {
+            max-width: 50px;
+            top: 32px;
+            left: 32px;
+        }
+
+        h3 {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 28px;
+            letter-spacing: 0;
+            color: #eaddff;
+            width: 260px;
+            margin-left: 82px;
+            margin-top: 11px;
+            margin-bottom: 35px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: #ffffff;
+            letter-spacing: 0;
+            width: 459px;
+            margin-bottom: 17px;
+        }
+
+        a {
+            font-weight: 400;
+            font-size: 12px;
+            height: 44px;
+            line-height: 16px;
+            letter-spacing: 0;
+            color: #6750a4;
+        }
+
+        &.small {
+            svg {
+                width: 42px;
+                top: 30px;
+            }
+
+            h3 {
+                margin-top: 15px;
+                margin-left: 73px;
+                margin-bottom: 38px;
+            }
+
+            p {
+                margin-bottom: 10px;
+            }
+
+            a {
+                width: 204px;
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile-max-size) {
+    .course {
+        width: 358px !important;
+        margin: auto;
+        height: auto;
+
+        svg {
+            max-width: 103px;
+            top: 29px;
+        }
+
+        h3 {
+            margin-top: 117px;
+            margin-left: 0;
+            width: 154px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.1px;
+            width: 300px;
+            margin-bottom: 16px;
+        }
+
+        a {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.1px;
+        }
+
+        &.small {
+            svg {
+                width: 68px !important;
+            }
+
+            h3 {
+                margin-top: 115px;
+                margin-left: 0;
+                width: 154px;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 0;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.1px;
+                width: 300px;
+                margin-bottom: 16px;
+            }
+
+            a {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.1px;
+            }
+        }
+    }
+}
+
+@media (max-width: $unsafe-mobile-max-size) {
+    .course {
+        width: 100% !important;
+
+        svg {
+            max-width: 30%;
+        }
+
+        h3 {
+            width: 100% !important;
+        }
+
+        p {
+            width: 100% !important;
+        }
+
+        a {
+            width: 100% !important;
+        }
+    }
+}

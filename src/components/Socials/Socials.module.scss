@@ -1,0 +1,22 @@
+#socials {
+    display: flex;
+    gap: 27.86px;
+    cursor: pointer;
+
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 900px) {
+    #socials {
+        width: 195px;
+        justify-content: space-between;
+        margin: auto;
+        
+        img {
+            width: 27.86px !important;
+            height: 27px !important;
+        }
+    }
+}

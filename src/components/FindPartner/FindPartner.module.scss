@@ -1,0 +1,501 @@
+@import "../../vars";
+
+#wrapper {
+    background: #f5eff7;
+
+    #findPartner {
+        width: $desktop-container-size;
+        margin: auto;
+        padding: 128px 0;
+        position: relative;
+
+        #content {
+            width: 456px;
+            z-index: 3 !important;
+            position: relative;
+
+            h2 {
+                color: #1d192b;
+                letter-spacing: -0.25px;
+                line-height: 64px;
+                font-size: 57px;
+                font-weight: 700;
+                font-family: Montserrat;
+                width: 384px;
+                margin-bottom: 32px;
+            }
+
+            p {
+                font-family: Montserrat;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.15px;
+                color: #625b71;
+                margin-bottom: 32px;
+            }
+        }
+
+        #partners {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: 2 !important;
+
+            img {
+                animation: rotation 6s infinite linear;
+            }
+
+            div {
+                cursor: pointer;
+                position: absolute;
+            }
+
+            h3 {
+                color: #000000;
+                font-family: Montserrat;
+                font-weight: 400;
+            }
+
+            #first {
+                top: 132px;
+                left: 598px;
+                width: 265px;
+
+                .block {
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        top: -68px;
+                        right: 158px;
+                    }
+                }
+
+                h3 {
+                    font-size: 45px;
+                    line-height: 52px;
+                }
+            }
+
+            #second {
+                width: 200px;
+                top: 283px;
+                left: 762px;
+
+                h3 {
+                    display: block;
+                    width: 198px;
+                    font-size: 36px;
+                    line-height: 44px;
+                }
+            }
+
+            #third {
+                top: 487px;
+                left: 621px;
+
+                .block {
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        top: -85px;
+                        right: -45px;
+                    }
+                }
+
+                h3 {
+                    font-size: 45px;
+                    line-height: 52px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $tablet-max-size) {
+    #wrapper {
+        #findPartner {
+            width: 600px;
+            padding-top: 188px;
+            padding-bottom: 149px;
+
+            #content {
+                width: 531px;
+                margin: auto;
+
+                h2 {
+                    width: 100%;
+                    display: block;
+                    letter-spacing: 0px;
+                    line-height: 40px;
+                    font-size: 32px;
+                    font-weight: 400;
+                    margin-bottom: 32px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: #1d192b;
+                }
+
+                p {
+                    width: 531px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: 0px;
+                    color: #21005d;
+                    margin-bottom: 32px;
+                    text-align: center;
+                }
+
+                button {
+                    display: block;
+                    margin: auto;
+                }
+            }
+
+            #partners {
+                #first {
+                    top: 75px;
+                    left: 62px;
+                    width: 260px;
+
+                    .block {
+                        position: relative;
+
+                        img {
+                            width: 124px;
+                            height: 124px;
+                            top: -44px;
+                            right: 189px;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 28px;
+                        font-weight: 400;
+                        line-height: 36px;
+                        color: #0000004d;
+                    }
+                }
+
+                #second {
+                    top: 32px;
+                    left: 446px;
+                    opacity: 50%;
+
+                    h3 {
+                        width: 94px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.15px;
+                        color: #6750a4;
+                    }
+                }
+
+                #third {
+                    top: 499px;
+                    left: 409px;
+
+                    .block {
+                        position: relative;
+
+                        img {
+                            position: absolute;
+                            top: -44px;
+                            right: 118px;
+                            width: 100px;
+                            height: 100px;
+                        }
+                    }
+
+                    h3 {
+                        width: 180px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.15px;
+                        color: #0000004d;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile-max-size) {
+    #wrapper {
+        #findPartner {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            padding-top: 77px;
+            padding-bottom: 32px;
+
+            #content {
+                width: 358px;
+
+                h2 {
+                    width: 358px;
+                    margin: auto;
+                    margin-bottom: 16px;
+                    color: #1d192b;
+                }
+
+                p {
+                    padding-left: 0;
+                    width: 358px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.1px;
+                    font-weight: 500;
+                    margin: auto;
+                    margin-bottom: 84px;
+                }
+
+                button {
+                    width: 358px;
+                    margin: auto;
+                    height: 68px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                }
+            }
+
+            #partners {
+                width: 358px;
+                margin: auto;
+
+                #first {
+                    top: 19px;
+                    left: 20px;
+                    width: fit-content;
+
+                    .block {
+                        position: relative;
+
+                        img {
+                            width: 60px;
+                            height: 60px;
+                            top: -12px;
+                            right: 58px;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 16px;
+                    }
+                }
+
+                #second {
+                    top: 30px;
+                    left: 224px;
+                    opacity: 50%;
+
+                    h3 {
+                        top: 25px;
+                        left: 225px;
+                        letter-spacing: 0;
+                        width: 137px;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: #6750a4;
+                    }
+                }
+
+                #third {
+                    top: 345px;
+                    left: 203px;
+
+                    .block {
+                        position: relative;
+
+                        img {
+                            position: absolute;
+                            top: -23px;
+                            right: 25px;
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $unsafe-mobile-max-size) {
+    #wrapper {
+        #findPartner {
+            width: 100%;
+            margin: 0;
+            padding: 10px;
+            padding-top: 77px;
+            padding-bottom: 32px;
+
+            #content {
+                width: 100%;
+
+                h2 {
+                    width: 100%;
+                    font-size: 24px;
+                }
+
+                p {
+                    width: 100%;
+                    margin-bottom: 64px;
+                    font-size: 12px;
+                }
+
+                button {
+                    width: 100%;
+                }
+            }
+
+            #partners {
+                width: 100%;
+                margin: auto;
+
+                #first {
+                    top: 20px;
+                    left: 60px;
+                    width: fit-content;
+
+                    .block {
+                        position: relative;
+
+                        img {
+                            width: 60px;
+                            height: 60px;
+                            top: -12px;
+                            right: 58px;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 16px;
+                    }
+                }
+
+                #second {
+                    top: 44px;
+                    left: 191px;
+
+                    h3 {
+                        top: 25px;
+                        left: 225px;
+                        letter-spacing: 0;
+                        width: 137px;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: #6750a4;
+                    }
+                }
+
+                #third {
+                    top: 265px;
+                    left: 202px;
+
+                    .block {
+                        position: relative;
+
+                        img {
+                            position: absolute;
+                            top: -23px;
+                            right: 25px;
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 363px) {
+    #wrapper {
+        #findPartner {
+            #partners {
+                width: 100%;
+                margin: auto;
+
+                #first {
+                    top: 20px;
+                    left: 60px;
+                    width: fit-content;
+
+                    .block {
+                        position: relative;
+
+                        img {
+                            width: 60px;
+                            height: 60px;
+                            top: -12px;
+                            right: 40px;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 13px;
+                    }
+                }
+
+                #second {
+                    top: 44px;
+                    left: 191px;
+
+                    h3 {
+                        top: 25px;
+                        left: 225px;
+                    }
+                }
+
+                #third {
+                    top: 265px;
+                    left: 202px;
+
+                    .block {
+                        position: relative;
+
+                        img {
+                            position: absolute;
+                            top: -20px;
+                            right: 25px;
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,118 @@
+@import "../../vars";
+
+#header {
+    margin-top: 24px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+
+    >svg {
+        margin-right: 64px;
+    }
+
+    menu {
+        display: flex;
+        gap: 32.5px;
+        align-items: center;
+
+        a {
+            color: #625b71;
+            font-family: Montserrat;
+            font-weight: 500;
+            text-decoration: none;
+            position: relative;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            transition: color 0.3s;
+
+            &.active::before {
+                content: "";
+                position: absolute;
+                bottom: -11px;
+                left: -11px;
+                right: 0;
+                margin: auto;
+                width: 20px;
+                height: 3px;
+                background-color: #625b71;
+                transition: background-color 0.3s;
+            }
+        }
+    }
+
+    #lang {
+        cursor: pointer;
+        margin-left: 86px;
+        margin-right: 64px;
+        padding: 2px;
+    }
+
+    #avatar {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: none;
+    }
+
+    &.dark {
+        menu > a {
+            color: #ffffff !important;
+
+            &::before {
+                background-color: #ffffff;
+            }
+        }
+    }
+}
+
+@media (max-width: $tablet-max-size) {
+    #header {
+        justify-content: space-between;
+
+        menu {
+            display: none;
+        }
+
+        #lang {
+            display: none;
+        }
+
+        .themeSwitcher {
+            display: none;
+        }
+
+        #avatar {
+            display: block;
+        }
+
+        >svg {
+            width: 116.04px !important;
+            height: 39.04px !important;
+        }
+    }
+}
+
+@media (max-width: $mobile-max-size) {
+    #header {
+        width: 358px;
+
+        >svg {
+            width: 116.04px;
+            height: 39.04px;
+        }
+    }
+}
+
+@media (max-width: $unsafe-mobile-max-size) {
+    #header {
+        width: 100%;
+        padding: 0 10px;
+
+        >svg {
+            width: 121.15px;
+            height: 44.17px;
+        }
+    }
+}

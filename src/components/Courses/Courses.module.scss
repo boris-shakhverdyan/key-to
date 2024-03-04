@@ -1,0 +1,39 @@
+@import "../../vars";
+
+#courses {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding-top: 62px;
+    padding-bottom: 128px;
+}
+
+@media (max-width: $tablet-max-size) {
+    #courses {
+        width: 100%;
+        flex-direction: column;
+        gap: 32px;
+        padding-top: 32px;
+        padding-bottom: 64px;
+    }
+}
+
+@media (max-width: $mobile-max-size) {
+    #courses {
+        width: 100%;
+        padding-top: 64px;
+        padding-bottom: 62px;
+        
+        > div {
+            &:nth-child(3n) {
+                h3 {
+                    margin-top: 107px !important;
+                }
+
+                p {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+}
